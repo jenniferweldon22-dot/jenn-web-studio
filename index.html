@@ -70,7 +70,7 @@
       </div>
       <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 15px;">
         <!-- FIX 4: View Technical Pitch links to GitHub repo -->
-        href="https://canva.link/ghost-town-pitch"  target="_blank" class="btn" style="background: #c0727a; color: #fff; text-align: center; display: block; width: 100%; box-sizing: border-box;">View Technical Pitch</a>
+        <a href="https://canva.link/ghost-town-pitch" target="_blank" class="btn" style="background: #c0727a; color: #fff; text-align: center; display: block; width: 100%; box-sizing: border-box;">View Technical Pitch</a>
         <!-- FIX 5: Ghost Town "View Code" — you had a ghost-town-engine repo linked, keeping it -->
         <a href="https://github.com/jenniferweldon22-dot/ghost-town-engine" target="_blank" class="btn" style="text-align: center; display: block; width: 100%; box-sizing: border-box;">View Code</a>
       </div>
@@ -80,7 +80,7 @@
     <div class="service-card">
       <h3>Restaurant Website</h3>
       <p>Modern responsive restaurant website focused on clean design.</p>
-      <!-- FIX 1: Make sure the-well-demo.mp4 is in an "images" folder in your repo -->
+      <!-- FIX 1: Restaurant video - Assuming 'images' folder is at the root of the repository -->
       <video width="100%" autoplay loop muted playsinline controls style="border-radius:12px; margin-top:15px; background: #000;">
         <source src="images/the-well-demo.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -96,7 +96,7 @@
     <div class="service-card">
       <h3>AI Study Coach ✨</h3>
       <p>AI-powered study planner built with React and Python.</p>
-      <!-- FIX 1: Make sure ai-study-coach-demo.mp4 is in an "images" folder in your repo -->
+      <!-- FIX 1: AI Study Coach video - Assuming 'images' folder is at the root of the repository -->
       <video width="100%" autoplay loop muted playsinline controls style="border-radius:12px; margin-top:15px; background: #000;">
         <source src="images/ai-study-coach-demo.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -209,17 +209,17 @@
       <form id="contact-form" style="display: flex; flex-direction: column; gap: 20px;">
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
           <div style="display: flex; flex-direction: column; gap: 8px;">
-            <label style="font-size: 10px; text-transform: uppercase; font-weight: bold; color: #aaa;">Your Name</label>
-            <input type="text" placeholder="Jane Smith" style="padding: 15px; border-radius: 10px; border: 1px solid #eee; background: #fff;">
+            <label for="name" style="font-size: 10px; text-transform: uppercase; font-weight: bold; color: #aaa;">Your Name</label>
+            <input type="text" placeholder="Jane Smith" id="name" name="name" style="padding: 15px; border-radius: 10px; border: 1px solid #eee; background: #fff;">
           </div>
           <div style="display: flex; flex-direction: column; gap: 8px;">
-            <label style="font-size: 10px; text-transform: uppercase; font-weight: bold; color: #aaa;">Email</label>
-            <input type="email" placeholder="jane@example.com" style="padding: 15px; border-radius: 10px; border: 1px solid #eee; background: #fff;">
+            <label for="email" style="font-size: 10px; text-transform: uppercase; font-weight: bold; color: #aaa;">Email</label>
+            <input type="email" placeholder="jane@example.com" id="email" name="email" style="padding: 15px; border-radius: 10px; border: 1px solid #eee; background: #fff;">
           </div>
         </div>
         <div style="display: flex; flex-direction: column; gap: 8px;">
-          <label style="font-size: 10px; text-transform: uppercase; font-weight: bold; color: #aaa;">What do you need?</label>
-          <select style="padding: 15px; border-radius: 10px; border: 1px solid #eee; background: #fff;">
+          <label for="service" style="font-size: 10px; text-transform: uppercase; font-weight: bold; color: #aaa;">What do you need?</label>
+          <select id="service" name="service" style="padding: 15px; border-radius: 10px; border: 1px solid #eee; background: #fff;">
             <option>Select a service...</option>
             <option>New Website</option>
             <option>Redesign</option>
@@ -227,8 +227,8 @@
           </select>
         </div>
         <div style="display: flex; flex-direction: column; gap: 8px;">
-          <label style="font-size: 10px; text-transform: uppercase; font-weight: bold; color: #aaa;">Tell me about your project</label>
-          <textarea placeholder="Share as much or as little as you'd like..." style="padding: 15px; border-radius: 10px; border: 1px solid #eee; background: #fff; height: 100px; resize: none;"></textarea>
+          <label for="message" style="font-size: 10px; text-transform: uppercase; font-weight: bold; color: #aaa;">Tell me about your project</label>
+          <textarea placeholder="Share as much or as little as you'd like..." id="message" name="message" style="padding: 15px; border-radius: 10px; border: 1px solid #eee; background: #fff; height: 100px; resize: none;"></textarea>
         </div>
         <button type="submit" style="background: #111; color: #fff; padding: 20px; border-radius: 15px; border: none; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px;">
           Send message →
@@ -253,3 +253,4 @@
 
 </body>
 </html>
+
