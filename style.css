@@ -36,6 +36,7 @@ body {
   display: flex;
   list-style: none;
   gap: 30px;
+  align-items: center;
 }
 
 .nav-links a {
@@ -81,6 +82,24 @@ body {
   opacity: 0.8;
 }
 
+.btn-pink {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #c0727a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: opacity 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-pink:hover {
+  opacity: 0.85;
+}
+
 /* SECTIONS */
 .section {
   padding: 60px 40px;
@@ -116,6 +135,67 @@ body {
   font-size: 20px;
 }
 
+/* FEATURED CARD (Ghost Town) */
+.service-card.featured {
+  border: 2px solid #c0727a;
+}
+
+/* PATENT BADGE */
+.patent-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #c0727a;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 4px 8px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  z-index: 10;
+}
+
+/* IP INFORMATION BOX */
+.ip-box {
+  background: rgba(192, 114, 122, 0.05);
+  border: 1px solid rgba(192, 114, 122, 0.2);
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.ip-box h4 {
+  color: #c0727a;
+  font-size: 11px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.ip-box p {
+  font-size: 12px;
+  margin: 0;
+  color: #333;
+}
+
+.ip-box p + p {
+  margin-top: 4px;
+  color: #666;
+}
+
+.ip-box a {
+  display: block;
+  margin-top: 12px;
+  color: #c0727a;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.ip-box a:hover {
+  text-decoration: underline;
+}
+
 /* VIDEO/IMAGE BOX */
 video, img {
   border-radius: 12px;
@@ -134,4 +214,20 @@ video, img {
 .contact-box a {
   color: #000;
   text-decoration: none;
+}
+
+/* FORM SUCCESS MESSAGE */
+#form-success {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#form-success h3 {
+  color: #111;
+  margin-bottom: 10px;
+}
+
+#form-success p {
+  color: #666;
+  margin-bottom: 24px;
 }
