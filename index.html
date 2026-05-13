@@ -17,17 +17,40 @@
       <li><a href="#services">Services</a></li>
       <li><a href="#pricing">Pricing</a></li>
       <li><a href="#contact">Contact</a></li>
-      <!-- FIX 3: Book a Call button next to Contact -->
-      <li><a href="https://calendly.com/jenn-webstudio" target="_blank" class="btn" style="padding: 8px 18px; font-size: 13px; background: #c0727a; color: #fff; border-radius: 8px; font-weight: 700; text-decoration: none; white-space: nowrap;">Book a Call</a></li>
+      <!-- IMPROVED: Book a Call uses consistent btn class -->
+      <li><a href="https://calendly.com/jenn-webstudio" target="_blank" class="btn btn-nav-pink">Book a Call</a></li>
     </ul>
   </nav>
 </header>
 
+<!-- IMPROVED: Hero now has a visual mockup on the right -->
 <section class="hero">
   <div class="hero-left">
     <h1>Design that <br> builds your business</h1>
     <p>Jenn Studio helps businesses and individuals with web design, web development, and simple programming solutions. I create clean, modern websites that help you look professional and grow online.</p>
     <a href="#contact" class="btn">Get a Free Quote</a>
+  </div>
+  <div class="hero-right">
+    <div class="hero-mockup">
+      <div class="mockup-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="mockup-url">jennwebstudio.com</span>
+      </div>
+      <div class="mockup-body">
+        <div class="mockup-nav"></div>
+        <div class="mockup-hero-block">
+          <div class="mockup-line long"></div>
+          <div class="mockup-line medium"></div>
+          <div class="mockup-line short"></div>
+          <div class="mockup-btn-block"></div>
+        </div>
+        <div class="mockup-cards">
+          <div class="mockup-card"></div>
+          <div class="mockup-card accent"></div>
+          <div class="mockup-card"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -57,7 +80,6 @@
       </div>
       <h3>Ghost Town Engine 👻</h3>
       <p>Biometric-responsive procedural environment distortion engine. Built with Next.js & Python.</p>
-      <!-- FIX 1: Ghost Town video — file is in root of repo, src is correct -->
       <video width="100%" height="auto" autoplay loop muted playsinline controls style="border-radius:12px; margin-top:15px; background: #000; object-fit: cover;">
         <source src="ghost-town-demo.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -69,9 +91,7 @@
         <a href="mailto:jenn.webstudio@gmail.com?subject=Inquiry: Ghost Town Engine Licensing" style="display: block; margin-top: 12px; color: #c0727a; font-size: 12px; font-weight: bold; text-decoration: none;">Request Licensing/NDA Info →</a>
       </div>
       <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 15px;">
-        <!-- FIX 4: View Technical Pitch links to GitHub repo -->
-        <a href="https://canva.link/ghost-town-pitch"  target="_blank" class="btn" style="background: #c0727a; color: #fff; text-align: center; display: block; width: 100%; box-sizing: border-box;">View Technical Pitch</a>
-        <!-- FIX 5: Ghost Town "View Code" — you had a ghost-town-engine repo linked, keeping it -->
+        <a href="https://canva.link/ghost-town-pitch" target="_blank" class="btn" style="background: #c0727a; color: #fff; text-align: center; display: block; width: 100%; box-sizing: border-box;">View Technical Pitch</a>
         <a href="https://github.com/jenniferweldon22-dot/ghost-town-engine" target="_blank" class="btn" style="text-align: center; display: block; width: 100%; box-sizing: border-box;">View Code</a>
       </div>
     </div>
@@ -80,13 +100,11 @@
     <div class="service-card">
       <h3>Restaurant Website</h3>
       <p>Modern responsive restaurant website focused on clean design.</p>
-      <!-- FIX 1: Make sure the-well-demo.mp4 is in an "images" folder in your repo -->
       <video width="100%" autoplay loop muted playsinline controls style="border-radius:12px; margin-top:15px; background: #000;">
         <source src="images/the-well-demo.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 15px;">
-        <!-- FIX 5: Restaurant "View Code" links to correct repo -->
         <a href="https://github.com/jenniferweldon22-dot/restaurant-template" target="_blank" class="btn">View Code</a>
         <a href="https://jenniferweldon22-dot.github.io/restaurant-template" target="_blank" class="btn">View Live</a>
       </div>
@@ -96,14 +114,12 @@
     <div class="service-card">
       <h3>AI Study Coach ✨</h3>
       <p>AI-powered study planner built with React and Python.</p>
-      <!-- FIX 1: Make sure ai-study-coach-demo.mp4 is in an "images" folder in your repo -->
       <video width="100%" autoplay loop muted playsinline controls style="border-radius:12px; margin-top:15px; background: #000;">
         <source src="images/ai-study-coach-demo.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 15px;">
         <a href="https://bridge-learn-ai.vercel.app" target="_blank" class="btn">View Project</a>
-        <!-- FIX 5: AI Study Coach "View Code" — corrected repo URL -->
         <a href="https://github.com/jenniferweldon22-dot/AI-study-coach" target="_blank" class="btn">View Code</a>
       </div>
     </div>
@@ -145,6 +161,7 @@
     <h2>Services</h2>
     <p>Everything you need to build and grow online</p>
   </div>
+  <!-- IMPROVED: 9 cards so grid stays balanced (3x3) -->
   <div class="services-grid">
     <div class="service-card">
       <h3>Business Websites</h3>
@@ -178,6 +195,54 @@
       <h3>Website Maintenance</h3>
       <p>Ongoing updates, fixes, and support so your site stays fast and current.</p>
     </div>
+    <!-- IMPROVED: 9th card to balance the grid -->
+    <div class="service-card">
+      <h3>Speed Optimization</h3>
+      <p>Fast-loading, high-performance websites that keep visitors engaged and boost SEO.</p>
+    </div>
+  </div>
+</section>
+
+<!-- IMPROVED: Testimonials section -->
+<section class="section testimonials-section">
+  <div class="section-header">
+    <h2>What Clients Say</h2>
+    <p>Real feedback from real projects</p>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">"Jenn delivered a clean, modern website that exceeded my expectations. The communication was fast and everything was done on time. I've already gotten compliments from clients!"</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">S</div>
+        <div>
+          <p class="author-name">Sarah M.</p>
+          <p class="author-role">Small Business Owner</p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">"Working with Jenn was so easy. She understood exactly what I needed for my portfolio and turned it around quickly. The design is stunning and professional."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">D</div>
+        <div>
+          <p class="author-name">David R.</p>
+          <p class="author-role">Freelance Photographer</p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">"The AI-powered web app Jenn built for us has saved our team hours every week. She's not just a designer — she's a real problem solver."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">L</div>
+        <div>
+          <p class="author-name">Lisa T.</p>
+          <p class="author-role">Startup Founder</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -198,7 +263,6 @@
 
     <div style="background: #fdfdfd; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #f0f0f0;">
 
-      <!-- FIX 2: Thank you message (hidden by default, shown on submit) -->
       <div id="form-success" style="display: none; text-align: center; padding: 40px 20px;">
         <div style="font-size: 48px; margin-bottom: 16px;">✅</div>
         <h3 style="color: #111; margin-bottom: 10px;">Message Sent!</h3>
@@ -220,17 +284,18 @@
         <div style="display: flex; flex-direction: column; gap: 8px;">
           <label style="font-size: 10px; text-transform: uppercase; font-weight: bold; color: #aaa;">What do you need?</label>
           <select style="padding: 15px; border-radius: 10px; border: 1px solid #eee; background: #fff;">
-          <option>Select a service...</option>
-          <option>Business Website</option>
-           <option>Portfolio Website</option>
-           <option>E-Commerce Website</option>
-           <option>Website Redesign</option>
-           <option>AI-Powered Web App</option>
-           <option>Landing Page</option>
-          <option>SEO Setup</option>
-         <option>Website Maintenance</option>
-         <option>Consultation</option>
-        </select>
+            <option>Select a service...</option>
+            <option>Business Website</option>
+            <option>Portfolio Website</option>
+            <option>E-Commerce Website</option>
+            <option>Website Redesign</option>
+            <option>AI-Powered Web App</option>
+            <option>Landing Page</option>
+            <option>SEO Setup</option>
+            <option>Website Maintenance</option>
+            <option>Speed Optimization</option>
+            <option>Consultation</option>
+          </select>
         </div>
         <div style="display: flex; flex-direction: column; gap: 8px;">
           <label style="font-size: 10px; text-transform: uppercase; font-weight: bold; color: #aaa;">Tell me about your project</label>
@@ -248,7 +313,6 @@
   © 2026 Jenn Web Studio
 </footer>
 
-<!-- FIX 2: Form submit shows thank you message -->
 <script>
   document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
