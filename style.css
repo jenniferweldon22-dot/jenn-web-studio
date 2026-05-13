@@ -49,7 +49,7 @@ body {
   font-size: 14px;
 }
 
-/* IMPROVED: Book a Call nav button — consistent with site style */
+/* Book a Call nav button */
 .btn-nav-pink {
   padding: 8px 18px !important;
   font-size: 13px !important;
@@ -67,7 +67,7 @@ body {
   opacity: 0.85;
 }
 
-/* HERO SECTION — IMPROVED: two-column with mockup */
+/* HERO SECTION */
 .hero {
   padding: 80px 40px;
   max-width: 1200px;
@@ -360,7 +360,7 @@ video, img {
   margin-bottom: 24px;
 }
 
-/* IMPROVED: TESTIMONIALS SECTION */
+/* TESTIMONIALS SECTION */
 .testimonials-section {
   background: #fafafa;
   max-width: 100%;
@@ -439,10 +439,14 @@ video, img {
   margin: 0;
 }
 
-/* RESPONSIVE */
+/* ================================
+   RESPONSIVE — TABLET (max 900px)
+   ================================ */
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
+    padding: 50px 30px;
+    gap: 30px;
   }
 
   .hero-right {
@@ -454,20 +458,99 @@ video, img {
   }
 
   .testimonials-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section {
+    padding: 50px 30px;
+  }
+
+  .testimonials-section {
+    padding: 60px 30px;
   }
 }
 
+/* ================================
+   RESPONSIVE — MOBILE (max 600px)
+   ================================ */
 @media (max-width: 600px) {
+  /* Header & Nav */
+  .header {
+    padding: 14px 16px;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 11px;
+  }
+
+  .btn-nav-pink {
+    padding: 6px 10px !important;
+    font-size: 11px !important;
+  }
+
+  /* Hide Services & Pricing links on small screens to prevent overflow */
+  .nav-links li:nth-child(2),
+  .nav-links li:nth-child(3) {
+    display: none;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 30px 16px;
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  /* Sections */
+  .section {
+    padding: 40px 16px;
+  }
+
+  .section-header h2 {
+    font-size: 26px;
+  }
+
+  /* Grids — single column */
   .services-grid {
     grid-template-columns: 1fr;
   }
 
-  .nav-links {
-    gap: 16px;
+  .testimonials-grid {
+    grid-template-columns: 1fr;
   }
 
-  .hero h1 {
-    font-size: 32px;
+  .testimonials-section {
+    padding: 40px 16px;
+  }
+
+  /* Contact section — stack vertically */
+  #contact > div {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+
+  #contact h2 {
+    font-size: 28px !important;
+  }
+
+  /* Form name/email row — stack on mobile */
+  #contact-form > div:first-child {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Cards */
+  .service-card {
+    padding: 20px;
   }
 }
