@@ -230,3 +230,50 @@ video, img { border-radius: 12px; border: 1px solid #eee; display: block; }
   .bundle-card { padding: 24px 20px; }
   .bundle-price { font-size: 32px; }
 }
+/* ===================== FIX: BUTTON CLICK / STRIPE LINKS ===================== */
+
+/* Make sure template cards don’t block clicks */
+.template-card {
+  position: relative;
+  z-index: 1;
+}
+
+/* Ensure footer + button area is ALWAYS clickable above mockups */
+.template-footer {
+  position: relative;
+  z-index: 10;
+}
+
+/* Button container must always be above preview layers */
+.template-actions {
+  position: relative;
+  z-index: 20;
+  pointer-events: auto;
+}
+
+/* Prevent preview/mockup area from intercepting clicks */
+.template-preview,
+.template-preview-dark,
+.template-preview-alt,
+.template-preview-warm {
+  position: relative;
+  z-index: 0;
+}
+
+/* Force all buttons to always accept clicks */
+.btn,
+.btn-pink,
+.btn-pink-sm,
+.btn-outline-sm {
+  pointer-events: auto;
+}
+
+/* Safety fix for any accidental overlays */
+.template-preview * {
+  pointer-events: none;
+}
+
+/* Re-enable clicks ONLY on buttons inside template area */
+.template-footer * {
+  pointer-events: auto;
+}
