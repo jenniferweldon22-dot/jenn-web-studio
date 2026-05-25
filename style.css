@@ -1,9 +1,9 @@
 /* RESET & BASE STYLES */
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; background-color: #fff; }
+body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; background-color: #fdf0f3; }
 
 /* NAVIGATION */
-.header { padding: 20px 40px; background: white; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #f5f5f5; }
+.header { padding: 20px 40px; background: #fdf0f3; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #f5f5f5; }
 .nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
 .logo { font-weight: 600; font-size: 18px; letter-spacing: 1px; }
 .nav-links { display: flex; list-style: none; gap: 30px; align-items: center; }
@@ -232,7 +232,7 @@ video, img { border-radius: 12px; border: 1px solid #eee; display: block; }
 }
 /* ===================== FIX: BUTTON CLICK / STRIPE LINKS ===================== */
 
-/* Make sure template cards don’t block clicks */
+/* Make sure template cards don't block clicks */
 .template-card {
   position: relative;
   z-index: 1;
